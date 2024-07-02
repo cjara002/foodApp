@@ -7,8 +7,11 @@ import React from "react";
 import Feather from "react-native-vector-icons/Feather";
 import {
   GestureHandlerRootView,
+  ScrollView,
+  TextInput,
   TouchableOpacity,
 } from "react-native-gesture-handler";
+import Categories from "@/components/Categories/Categories";
 
 const Home = (props: any) => {
   // a powerful tool for applying consistent theming across your React Native app
@@ -94,9 +97,35 @@ const Home = (props: any) => {
                     borderRadius: 10,
                   },
                 ]}
-              ></View>
+              >
+                <TextInput
+                  style={{
+                    ...GlobalStyleSheet.searchInput,
+                    backgroundColor: colors.card,
+                    //  color: colors.title
+                  }}
+                  placeholder="Search for restaurants, items, and more"
+                  placeholderTextColor={colors.text}
+                />
+                <TouchableOpacity
+                  style={{
+                    position: "absolute",
+                    right: 5,
+                    height: 45,
+                    width: 45,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Feather color={colors.text} size={22} name="search" />
+                </TouchableOpacity>
+              </View>
             </View>
+
           </View>
+          <ScrollView contentContainerStyle={{paddingBottom: 80}}>
+           <Categories />
+          </ScrollView>
         </SafeAreaView>
       </GestureHandlerRootView>
     </>
