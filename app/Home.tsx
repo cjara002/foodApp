@@ -12,6 +12,8 @@ import {
   TouchableOpacity,
 } from "react-native-gesture-handler";
 import Categories from "@/components/Categories/Categories";
+import BannerSlide from "@/components/Banner/BannerSlides";
+import PopularItems from "@/components/Popular/popularitems";
 
 const Home = (props: any) => {
   // a powerful tool for applying consistent theming across your React Native app
@@ -121,10 +123,54 @@ const Home = (props: any) => {
                 </TouchableOpacity>
               </View>
             </View>
-
           </View>
-          <ScrollView contentContainerStyle={{paddingBottom: 80}}>
-           <Categories />
+          <ScrollView contentContainerStyle={{ paddingBottom: 80 }}>
+            <Categories />
+            {/* <View style={[GlobalStyleSheet.container, {paddingTop:0, paddingBottom:0}]}> */}
+            <View style={{ paddingTop: 0, paddingBottom: 0 }}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                {/* <Text style={{...FONTS.h5, color: colors.title}}> */}
+                <Text style={{ ...FONTS.h5, color: COLORS.title }}>
+                  Offers for you
+                </Text>
+                <TouchableOpacity>
+                  <Text
+                    style={{
+                      ...FONTS.font,
+                      ...FONTS.fontBold,
+                      color: COLORS.primary,
+                    }}
+                  >
+                    See all{" "}
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+            <BannerSlide />
+            {/* <View style={[GlobalStyleSheet.container, {paddingBottom:10}]}> */}
+            <View style={[{ paddingBottom: 10 }]}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Text style={{ ...FONTS.h5 }}>Popular Items</Text>
+                <TouchableOpacity>
+                  <Text style={{...FONTS.font, ...FONTS.fontBold, color: COLORS.primary}}>
+                   See All
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+            <PopularItems/>
           </ScrollView>
         </SafeAreaView>
       </GestureHandlerRootView>

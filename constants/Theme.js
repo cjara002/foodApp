@@ -10,23 +10,34 @@
 	cake : require('../assets/images/category/cake.png'),
 	meatloaf : require('../assets/images/category/meatloaf.png'),
 	drink : require('../assets/images/category/drink.png'),
+    foodBanner1 : require('../assets/images/banner/card1.png'),
+    foodBanner2 : require('../assets/images/banner/card2.png'),
+    foodItem1 : require('../assets/images/items/pic1.png'),
+	foodItem2 : require('../assets/images/items/pic2.png'),
+	foodItem3 : require('../assets/images/items/pic3.png'),
+	foodItem4 : require('../assets/images/items/pic4.png'),
     }
 
     export const COLORS = {
         white   : "#fff",
         title : "#2F2F2F",
         text : "rgba(0,0,0,.7)",
+        primary : "#FE9063",
     }
 
     export const SIZES = {
         font:14,
         //Font Sizes
+        h5:18,
         h6:16,
+        fontSm:13,
     };
 
     export const FONTS = {
         font   : {fontSize:SIZES.font, color: COLORS.text, lineHeight:20, fontFamily:'NunitoSans-Regular'},
+        h5 : {fontSize:SIZES.h5, color:COLORS.title, fontFamily:'Poppins-SemiBold'},
 
         h6     : {fontSize:SIZES.h6, color:COLORS.title, fontFamily:'Poppins-SemiBold'},  
         fontBold : {fontFamily:'NunitoSans-Bold'},
+        fontSm : {fontSize:SIZES.fontSm,color: COLORS.text, lineHeight:18, fontFamily:'NunitoSans-Regular'},
     }
