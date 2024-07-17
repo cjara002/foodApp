@@ -16,6 +16,9 @@
 	foodItem2 : require('../assets/images/items/pic2.png'),
 	foodItem3 : require('../assets/images/items/pic3.png'),
 	foodItem4 : require('../assets/images/items/pic4.png'),
+    foodItem5 : require('../assets/images/items/pic5.png'),
+	foodItem6 : require('../assets/images/items/pic6.png'),
+    star : require('../assets/images/icons/star.png'),
     }
 
     export const COLORS = {

@@ -14,11 +14,87 @@ import {
 import Categories from "@/components/Categories/Categories";
 import BannerSlide from "@/components/Banner/BannerSlides";
 import PopularItems from "@/components/Popular/popularitems";
+import ListItem from "@/components/List/ListItem";
 
 const Home = (props: any) => {
   // a powerful tool for applying consistent theming across your React Native app
   const theme = useTheme();
   const { colors } = theme;
+
+  const ItemData = [
+    {
+      image: IMAGES.foodItem3,
+      title: "Chicken curry",
+      duration: "45 min",
+      servings: "3",
+      price: "$35.45",
+      rating: "4.6",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem4,
+      title: "Chinese noodles",
+      duration: "30 min",
+      servings: "3",
+      price: "$25.15",
+      rating: "4.2",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem5,
+      title: "Pancake stack",
+      duration: "45 min",
+      servings: "3",
+      price: "$35.45",
+      rating: "4.6",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem6,
+      title: "Chicken curry",
+      duration: "45 min",
+      servings: "3",
+      price: "$35.45",
+      rating: "4.6",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem3,
+      title: "Chicken curry",
+      duration: "45 min",
+      servings: "3",
+      price: "$35.45",
+      rating: "4.6",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem4,
+      title: "Chinese noodles",
+      duration: "30 min",
+      servings: "3",
+      price: "$25.15",
+      rating: "4.2",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem5,
+      title: "Pancake stack",
+      duration: "45 min",
+      servings: "3",
+      price: "$35.45",
+      rating: "4.6",
+      isLike: false,
+    },
+    {
+      image: IMAGES.foodItem6,
+      title: "Chicken curry",
+      duration: "45 min",
+      servings: "3",
+      price: "$35.45",
+      rating: "4.6",
+      isLike: false,
+    },
+  ];
 
   return (
     <>
@@ -164,13 +240,46 @@ const Home = (props: any) => {
               >
                 <Text style={{ ...FONTS.h5 }}>Popular Items</Text>
                 <TouchableOpacity>
-                  <Text style={{...FONTS.font, ...FONTS.fontBold, color: COLORS.primary}}>
-                   See All
+                  <Text
+                    style={{
+                      ...FONTS.font,
+                      ...FONTS.fontBold,
+                      color: COLORS.primary,
+                    }}
+                  >
+                    See All
                   </Text>
                 </TouchableOpacity>
               </View>
             </View>
-            <PopularItems/>
+            <PopularItems />
+            <View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: 15,
+                  marginTop: 12,
+                }}
+              >
+                <Text style={{ ...FONTS.h5 }}>Recomended for you</Text>
+              </View>
+              {ItemData.map((data, index) => {
+                return (
+                  <ListItem
+                    key={index}
+                    image={data.image}
+                    title={data.title}
+                    duration={data.duration}
+                    servings={data.servings}
+                    price={data.price}
+                    rating={data.rating}
+                    isLike={data.isLike}
+                  />
+                );
+              })}
+            </View>
           </ScrollView>
         </SafeAreaView>
       </GestureHandlerRootView>
