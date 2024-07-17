@@ -19,6 +19,7 @@
     foodItem5 : require('../assets/images/items/pic5.png'),
 	foodItem6 : require('../assets/images/items/pic6.png'),
     star : require('../assets/images/icons/star.png'),
+    foodLogo : require('../assets/images/foodLogo.png'),
     }
 
     export const COLORS = {
@@ -31,6 +32,7 @@
     export const SIZES = {
         font:14,
         //Font Sizes
+        h3:24,
         h5:18,
         h6:16,
         fontSm:13,
@@ -38,6 +40,7 @@
 
     export const FONTS = {
         font   : {fontSize:SIZES.font, color: COLORS.text, lineHeight:20, fontFamily:'NunitoSans-Regular'},
+        h3     : {fontSize:SIZES.h3, color:COLORS.title, fontFamily:'Poppins-SemiBold'},
         h5 : {fontSize:SIZES.h5, color:COLORS.title, fontFamily:'Poppins-SemiBold'},
 
         h6     : {fontSize:SIZES.h6, color:COLORS.title, fontFamily:'Poppins-SemiBold'},  
