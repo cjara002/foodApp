@@ -1,5 +1,7 @@
-	
-    export const IMAGES = {
+import { Dimensions } from "react-native";
+const {width,height} = Dimensions.get('screen');	
+   
+   export const IMAGES = {
     //food app images start
 	foodPattern1 : require('../assets/images/patterns/pattern1.png'),
 	foodPattern2 : require('../assets/images/patterns/patterndark1.png'),
@@ -20,6 +22,8 @@
 	foodItem6 : require('../assets/images/items/pic6.png'),
     star : require('../assets/images/icons/star.png'),
     foodLogo : require('../assets/images/foodLogo.png'),
+    home2 : require('../assets/images/icons/home2.png'),
+    user1 : require('../assets/images/users/pic1.png'),
     }
 
     export const COLORS = {
@@ -36,6 +40,10 @@
         h5:18,
         h6:16,
         fontSm:13,
+
+        //App dimensions
+        width,
+        height,
     };
 
     export const FONTS = {

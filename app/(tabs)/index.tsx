@@ -9,13 +9,14 @@ import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/
 import OnBoarding from '@/components/OnBoarding/OnBoarding';
 import { SafeAreaView } from 'react-native';
 import { useTheme } from "@react-navigation/native";
+import DrawerNavigation from '@/components/Navigation/DrawerNavigation';
 
 
 const StackComponent = createStackNavigator();
 
-const {colors} = useTheme();
-
 export default function HomeScreen(props: any) {
+  
+  const {colors} = useTheme();
   return (
     // <Home />
 

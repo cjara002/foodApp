@@ -2,8 +2,12 @@
 import { Image, ImageBackground, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
+import { useNavigation } from 'expo-router';
+import { NavigationProp } from '@react-navigation/native';
+import { RootStackParamList } from '../Navigation/NavigationTypes';
 
-const OnBoarding = (navigation : any) => {
+const OnBoarding = (navigation1 : any) => {
+    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
     return (
         <SafeAreaView
             style={{
