@@ -67,7 +67,7 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({homeNavigate}) => {
                     
                     <TouchableOpacity
                         onPress={() => {
-                            // homeNavigate && navigation.navigate(homeNavigate);
+                            homeNavigate && homeNavigate();
                         }}
                         style={[styles.navLink]}
                     >
@@ -109,7 +109,7 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({homeNavigate}) => {
                         <Text style={[styles.navText,{color:colors.text}]}>Dark Mode</Text>
                         <ToggleStyle1
                             active={theme.dark}
-                            // onToggle={(value) => {
+                            // onToggle={(value: any) => {
                             //     if(value){
                             //         setLightTheme();
                             //     }else{
@@ -120,8 +120,8 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({homeNavigate}) => {
                     </TouchableOpacity>
                 </View>
                 <View style={{paddingBottom:30,paddingHorizontal:15,paddingTop:20}}>
-                    <Text style={{...FONTS.h6}}>AppZilla - Mobile Template</Text>
-                    <Text style={{...FONTS.font,color:colors.text}}>App Version 1.0</Text>
+                    <Text style={{...FONTS.h6}}>Food App</Text>
+                    <Text style={{...FONTS.font,color:colors.text}}>V1.0</Text>
                 </View>
             </View>
         </>
