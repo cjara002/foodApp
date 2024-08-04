@@ -71,8 +71,7 @@ const ListItem: React.FC<ListItemsProps> = ({image,title,duration,servings,ratin
                     </TouchableOpacity>
                 </View>
                 <TouchableOpacity 
-                    // onPress={() => navigation.navigate('ProductDetail')}
-                    onPress={() => console.log("Hello from List Items")}
+                    onPress={() => navigation.navigate('ProductDetail')}
                     activeOpacity={.85}
                     style={{flex:1}}
                 >

@@ -24,6 +24,7 @@ const {width,height} = Dimensions.get('screen');
     foodLogo : require('../assets/images/foodLogo.png'),
     home2 : require('../assets/images/icons/home2.png'),
     user1 : require('../assets/images/users/pic1.png'),
+    foodDetailImg : require('../assets/images/items/pic7.png'),
     }
 
     export const COLORS = {
@@ -31,6 +32,7 @@ const {width,height} = Dimensions.get('screen');
         title : "#2F2F2F",
         text : "rgba(0,0,0,.7)",
         primary : "#FE9063",
+        textLight : "rgba(0,0,0,.5)",
     }
 
     export const SIZES = {
@@ -44,6 +46,9 @@ const {width,height} = Dimensions.get('screen');
         //App dimensions
         width,
         height,
+
+        //radius
+        radius:12,
     };
 
     export const FONTS = {

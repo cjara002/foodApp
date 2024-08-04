@@ -136,7 +136,7 @@ const Items: React.FC<ItemsProps> = ({route,navigation}) => {
                                 onPress={() => navigation.navigate('Cart')}
                                 style={GlobalStyleSheet.NotificationBtn} >
                                 <FeatherIcon style={{marginLeft:-2}} size={22} color={COLORS.white} name={'shopping-cart'} />
-                                <View style={GlobalStyleSheet.NotificationDot}>
+                                <View >
                                     <Text style={{...FONTS.font,bottom:2,...FONTS.fontBold,fontSize:11,color:COLORS.white}}>2</Text>
                                 </View>
                             </TouchableOpacity>
@@ -153,27 +153,24 @@ const Items: React.FC<ItemsProps> = ({route,navigation}) => {
                                 shadowOpacity: .15,
                                 shadowRadius: 5,
                             },Platform.OS === 'ios' && {
-                                backgroundColor:colors.cardBg,
                                 borderRadius : 10,
                             }]}
                         >
                             <TextInput
                                 style={{
                                     ...GlobalStyleSheet.searchInput,
-                                    backgroundColor:colors.cardBg,
-                                    color:colors.title,
                                 }}
                                 placeholder={`Search items "${category}"`}
-                                placeholderTextColor={colors.textLight}
+                                placeholderTextColor={COLORS.textLight}
                             />
-                            <TouchableOpacity style={GlobalStyleSheet.searchInputIcon}>
+                            <TouchableOpacity>
                                 <FeatherIcon color={colors.text} size={22} name='search'/>
                             </TouchableOpacity>
                         </DropShadow>
                     </View>
                 </View>
                 <ScrollView>
-                    <View style={GlobalStyleSheet.container}>
+                    <View>
                         {ItemData.map((data,index) => {
                             return(
                                 <ListItem
