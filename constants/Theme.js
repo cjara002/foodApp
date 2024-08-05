@@ -25,6 +25,7 @@ const {width,height} = Dimensions.get('screen');
     home2 : require('../assets/images/icons/home2.png'),
     user1 : require('../assets/images/users/pic1.png'),
     foodDetailImg : require('../assets/images/items/pic7.png'),
+    blog : require('../assets/images/icons/blog.png'),
     }
 
     export const COLORS = {
@@ -33,12 +34,16 @@ const {width,height} = Dimensions.get('screen');
         text : "rgba(0,0,0,.7)",
         primary : "#FE9063",
         textLight : "rgba(0,0,0,.5)",
+        borderColor : "#E6E6E6",
+        success : "#54D969",
+        danger  : "#ff4a5c",
     }
 
     export const SIZES = {
         font:14,
         //Font Sizes
         h3:24,
+        h4:20,
         h5:18,
         h6:16,
         fontSm:13,
@@ -54,6 +59,7 @@ const {width,height} = Dimensions.get('screen');
     export const FONTS = {
         font   : {fontSize:SIZES.font, color: COLORS.text, lineHeight:20, fontFamily:'NunitoSans-Regular'},
         h3     : {fontSize:SIZES.h3, color:COLORS.title, fontFamily:'Poppins-SemiBold'},
+        h4     : {fontSize:SIZES.h4, color:COLORS.title, fontFamily:'Poppins-SemiBold'},
         h5 : {fontSize:SIZES.h5, color:COLORS.title, fontFamily:'Poppins-SemiBold'},
 
         h6     : {fontSize:SIZES.h6, color:COLORS.title, fontFamily:'Poppins-SemiBold'},  

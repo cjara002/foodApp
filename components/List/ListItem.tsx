@@ -5,6 +5,8 @@ import { LinearGradient } from 'expo-linear-gradient';;
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
+import { RootStackParamList } from '../Navigation/NavigationTypes';
+import { StackNavigationProp } from '@react-navigation/stack';
 
 interface ListItemsProps{
     image: any,
@@ -16,11 +18,16 @@ interface ListItemsProps{
     isLike: boolean
 }
 
+type ProductDetailScreenNavigationProp = StackNavigationProp<
+  RootStackParamList,
+  'ProductDetail'
+>;
+
 const ListItem: React.FC<ListItemsProps> = ({image,title,duration,servings,rating,price,isLike}) => {
     
     const {colors} = useTheme();
     
-    const navigation = useNavigation();
+    const navigation = useNavigation<ProductDetailScreenNavigationProp>();
 
     return (
         <>

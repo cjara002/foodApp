@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useNavigation, useTheme } from '@react-navigation/native';
-import Divider from '../Dividers/Divider';
+import Divider from '../Divider/Divider';
 import { COLORS, FONTS, IMAGES } from '../../constants/Theme';
 import ToggleStyle1 from '../Toggles/ToggleStyle1';
 import themeContext from '../../constants/themeContext';

@@ -4,9 +4,8 @@ import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { LinearGradient } from 'expo-linear-gradient';
-import { GlobalStyleSheet } from '@/constants/StyleSheet';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
-import Divider from '../Dividers/Divider';
+import Divider from '../Divider/Divider';
 
 const ProductDetail = (props: any) => {
     
@@ -71,7 +70,7 @@ const ProductDetail = (props: any) => {
                         <View
                             style={{paddingTop:10,marginBottom:20}}
                         >
-                            <Text style={{...FONTS.h4,color:colors.title}}>Pancake Stack</Text>
+                            <Text style={{...FONTS.h4,color:COLORS.title}}>Pancake Stack</Text>
                             <Text style={{...FONTS.font,color:colors.text}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
                         </View>
                         <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
@@ -88,7 +87,7 @@ const ProductDetail = (props: any) => {
                                     }}
                                     source={IMAGES.star}
                                 />
-                                <Text style={{...FONTS.h6,color:colors.title}}>4.5</Text>
+                                <Text style={{...FONTS.h6,color:COLORS.title}}>4.5</Text>
                             </View>
                             <View style={{
                                 flexDirection:'row',
@@ -96,7 +95,7 @@ const ProductDetail = (props: any) => {
                                 justifyContent:'center',
                                 borderLeftWidth:1,
                                 borderRightWidth:1,
-                                borderColor:colors.borderColor,
+                                borderColor:COLORS.borderColor,
                                 paddingHorizontal:15,
                             }}>
                                 <FeatherIcon style={{marginBottom:2,marginRight:5}} size={18} color={colors.text} name={'clock'}/>
@@ -111,7 +110,7 @@ const ProductDetail = (props: any) => {
                         <View style={{marginTop:25,flexDirection:'row',justifyContent:'space-between'}}>
                             <View>
                                 <Text style={{...FONTS.font,color:colors.text,marginBottom:4}}>Price</Text>
-                                <Text style={{...FONTS.h5,color:colors.title}}>$45.15</Text>
+                                <Text style={{...FONTS.h5,color:COLORS.title}}>$45.15</Text>
                             </View>
                             <View
                                 style={{
@@ -134,13 +133,13 @@ const ProductDetail = (props: any) => {
                                             alignItems:'center',
                                             justifyContent:'center',
                                             borderWidth:1,
-                                            borderColor:colors.borderColor,
+                                            borderColor:COLORS.borderColor,
                                         }}
                                     >
-                                        <FeatherIcon color={colors.title} name={'minus'} size={18} />
+                                        <FeatherIcon color={COLORS.title} name={'minus'} size={18} />
                                     </View>
                                 </TouchableOpacity>
-                                <Text style={{...FONTS.font,width:40,textAlign:'center',fontSize:16,...FONTS.fontBold,color:colors.title}}>{num}</Text>
+                                <Text style={{...FONTS.font,width:40,textAlign:'center',fontSize:16,...FONTS.fontBold,color:COLORS.title}}>{num}</Text>
                                 <TouchableOpacity
                                     onPress={() => {
                                         setNum(num + 1)
@@ -154,10 +153,10 @@ const ProductDetail = (props: any) => {
                                             alignItems:'center',
                                             justifyContent:'center',
                                             borderWidth:1,
-                                            borderColor:colors.borderColor,
+                                            borderColor:COLORS.borderColor,
                                         }}
                                     >
-                                        <FeatherIcon color={colors.title} name={'plus'} size={18} />
+                                        <FeatherIcon color={COLORS.title} name={'plus'} size={18} />
                                     </View>
                                 </TouchableOpacity>
                             </View>
@@ -182,7 +181,7 @@ const ProductDetail = (props: any) => {
                                 <Text style={{...FONTS.fontSm,color:COLORS.white}}>20% OFF DISCOUNT</Text>
                             </View>
                             <TouchableOpacity>
-                                <Text style={{...FONTS.font,...FONTS.fontBold,color:colors.title}}>Apply promo code</Text>
+                                <Text style={{...FONTS.font,...FONTS.fontBold,color:COLORS.title}}>Apply promo code</Text>
                             </TouchableOpacity>
                         </View>
 

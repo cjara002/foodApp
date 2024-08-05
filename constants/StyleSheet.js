@@ -1,12 +1,12 @@
-// import { COLORS, FONTS } from "./theme";
+import { COLORS, FONTS } from "@/constants/Theme";
 
 export const GlobalStyleSheet = {
     container : {
         padding : 15,
         //maxWidth : 575,
-        marginLeft : 'auto',
-        marginRight : 'auto',
-        //backgroundColor:'red',
+        // marginLeft : '2.5%',
+        // marginRight : '2.5%',
+        backgroundColor:'red',
         width : '100%',
     },
     row : {
@@ -23,7 +23,7 @@ export const GlobalStyleSheet = {
         paddingHorizontal : 5,
     },
     searchInput : {
-        // ...FONTS.font,
+        ...FONTS.font,
         height:45,
         borderRadius:10,
         paddingLeft:18,
@@ -58,7 +58,7 @@ export const GlobalStyleSheet = {
         height:20,
         width:20,
         borderRadius:10,
-        // backgroundColor:COLORS.primary,
+        backgroundColor:COLORS.primary,
         borderWidth:1,
         position:'absolute',
         top:-5,

@@ -2,7 +2,7 @@ import { useTheme } from "@react-navigation/native";
 import { ImageBackground, View, Text, Platform } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS, FONTS, IMAGES } from "../constants/Theme";
-import { GlobalStyleSheet } from "../constants/StyleSheet";
+import { GlobalStyleSheet } from "@/constants/StyleSheet";
 import React from "react";
 import Feather from "react-native-vector-icons/Feather";
 import {
@@ -179,22 +179,13 @@ const Home = (props: any) => {
                 <TextInput
                   style={{
                     ...GlobalStyleSheet.searchInput,
-                    backgroundColor: colors.card,
-                    //  color: colors.title
+                    backgroundColor: "white",
+                    color: COLORS.title,
                   }}
                   placeholder="Search for restaurants, items, and more"
-                  placeholderTextColor={colors.text}
+                  placeholderTextColor={COLORS.textLight}
                 />
-                <TouchableOpacity
-                  style={{
-                    position: "absolute",
-                    right: 5,
-                    height: 45,
-                    width: 45,
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <TouchableOpacity style={GlobalStyleSheet.searchInputIcon}>
                   <Feather color={colors.text} size={22} name="search" />
                 </TouchableOpacity>
               </View>
@@ -202,8 +193,12 @@ const Home = (props: any) => {
           </View>
           <ScrollView contentContainerStyle={{ paddingBottom: 80 }}>
             <Categories />
-            {/* <View style={[GlobalStyleSheet.container, {paddingTop:0, paddingBottom:0}]}> */}
-            <View style={{ paddingTop: 0, paddingBottom: 0 }}>
+            <View
+              style={[
+                GlobalStyleSheet.container,
+                { paddingTop: 0, paddingBottom: 0 },
+              ]}
+            >
               <View
                 style={{
                   flexDirection: "row",
@@ -211,7 +206,6 @@ const Home = (props: any) => {
                   justifyContent: "space-between",
                 }}
               >
-                {/* <Text style={{...FONTS.h5, color: colors.title}}> */}
                 <Text style={{ ...FONTS.h5, color: COLORS.title }}>
                   Offers for you
                 </Text>
@@ -229,8 +223,7 @@ const Home = (props: any) => {
               </View>
             </View>
             <BannerSlide />
-            {/* <View style={[GlobalStyleSheet.container, {paddingBottom:10}]}> */}
-            <View style={[{ paddingBottom: 10 }]}>
+            <View style={[GlobalStyleSheet.container, { paddingBottom: 10 }]}>
               <View
                 style={{
                   flexDirection: "row",

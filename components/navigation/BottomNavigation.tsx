@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../app/Home';
 import CustomNavigation from './CustomNavigation';
+import Orders from '../Order/Orders';
 // import Orders from './Orders';
 // import Favourites from './Favourites';
 // import Profile from './Profile';
@@ -23,11 +24,11 @@ const BottomNavigation = (props: any) => {
                 component={Home}
 
             />
-            {/* <Tab.Screen 
+            <Tab.Screen 
                 name="Orders"
                 component={Orders}
             />
-            <Tab.Screen 
+             {/*<Tab.Screen 
                 name="Favourites"
                 component={Favourites}
             />

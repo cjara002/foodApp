@@ -126,12 +126,12 @@ const CustomNavigation: React.FC<CustomNavigationProps> = ({state,navigation,des
                                         tintColor:isFocused ? COLORS.white : colors.text,
                                     }}
                                     source={
-                                        IMAGES.home2
-                                        // label === "Home" ? IMAGES.home2
-                                        // label === "Orders" ? IMAGES.blog:
+                                        label === "Home" ? IMAGES.home2 :
+                                        label === "Orders" ? IMAGES.blog :
                                         // label === "Favourites" ? IMAGES.heart :
-                                        // label === "Profile" && IMAGES.profile2
-                                    }
+                                        // label === "Profile" ? IMAGES.profile2 :
+                                        undefined
+                                      }
                                 />
                             </TouchableOpacity>
                         </View>
