@@ -11,7 +11,6 @@ import { SafeAreaView } from 'react-native';
 import DrawerNavigation from './DrawerNavigation';
 import Cart from './Cart';
 import ProductDetail from './ProductDetail';
-// import Home from './Home';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();

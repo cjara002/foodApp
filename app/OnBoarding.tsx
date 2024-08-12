@@ -1,4 +1,3 @@
-// import React from 'react';
 import { Image, ImageBackground, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
@@ -6,7 +5,7 @@ import { useNavigation } from 'expo-router';
 import { NavigationProp } from '@react-navigation/native';
 import { RootStackParamList } from './NavigationTypes'
 
-const OnBoarding = (navigation1 : any) => {
+const OnBoarding = () => {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
     return (
         <SafeAreaView
@@ -142,6 +141,7 @@ const OnBoarding = (navigation1 : any) => {
                                 style={{
                                     height:70,
                                     width:70,
+                                    borderRadius: 120
                                 }}
                                 source={IMAGES.foodLogo}
                             />
@@ -162,8 +162,8 @@ const OnBoarding = (navigation1 : any) => {
                                 alignItems:'center',
                             }}
                         >
-                            <Text style={{...FONTS.h3,color:"#000",textAlign:'center',marginBottom:4}}>Food to make you Feel good</Text>
-                            <Text style={{...FONTS.font,textAlign:'center',marginBottom:22}}>you will find the one who suits you amoung our specialists</Text>
+                            <Text style={{...FONTS.h3,color:"#000",textAlign:'center',marginBottom:4}}>Let's get to cooking!</Text>
+                            <Text style={{...FONTS.font,textAlign:'center',marginBottom:22}}>We will help you find recipes that you will love.</Text>
                             <TouchableOpacity
                                 onPress={() => navigation.navigate('DrawerNavigation')}
                                 activeOpacity={.95}
