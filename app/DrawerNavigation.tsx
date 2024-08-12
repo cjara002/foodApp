@@ -1,7 +1,7 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import BottomNavigation from './BottomNavigation';
-import DrawerMenu from '../Layout/DrawerMenu';
+import DrawerMenu from './DrawerMenu';
 import { useNavigation } from '@react-navigation/native';
 
 const Drawer = createDrawerNavigator();

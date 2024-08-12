@@ -14,7 +14,7 @@ import {
 import Categories from "@/components/Categories/Categories";
 import BannerSlide from "@/components/Banner/BannerSlides";
 import PopularItems from "@/components/Popular/popularitems";
-import ListItem from "@/components/List/ListItem";
+import ListItem from "./ListItem";
 
 const Home = (props: any) => {
   // a powerful tool for applying consistent theming across your React Native app

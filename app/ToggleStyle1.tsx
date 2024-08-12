@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
-import { COLORS, SIZES } from '../../constants/Theme';
+import { COLORS, SIZES } from '@/constants/Theme';
 
 const ToggleStyle1 = (props: any) => {
     

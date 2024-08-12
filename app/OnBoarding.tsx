@@ -4,7 +4,7 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
 import { useNavigation } from 'expo-router';
 import { NavigationProp } from '@react-navigation/native';
-import { RootStackParamList } from '../Navigation/NavigationTypes';
+import { RootStackParamList } from './NavigationTypes'
 
 const OnBoarding = (navigation1 : any) => {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();

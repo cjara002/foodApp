@@ -3,10 +3,10 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useNavigation, useTheme } from '@react-navigation/native';
-import Divider from '../Divider/Divider';
-import { COLORS, FONTS, IMAGES } from '../../constants/Theme';
-import ToggleStyle1 from '../Toggles/ToggleStyle1';
-import themeContext from '../../constants/themeContext';
+import Divider from './Divider';
+import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
+import ToggleStyle1 from './ToggleStyle1';
+import themeContext from '@/constants/themeContext';
 
 const home = `<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#bfc9da">
 <path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"></path>

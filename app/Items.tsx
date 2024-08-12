@@ -3,9 +3,9 @@ import { ImageBackground, Platform, SafeAreaView, ScrollView, Text, TextInput, T
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useTheme } from '@react-navigation/native';
 import DropShadow from 'react-native-drop-shadow';
-import { GlobalStyleSheet } from '../../constants/StyleSheet';
-import { COLORS, FONTS, IMAGES } from '../../constants/Theme';
-import ListItem from '../List/ListItem';
+import { GlobalStyleSheet } from '@/constants/StyleSheet';
+import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
+import ListItem from './ListItem';
 
 interface ItemsProps{
     route: any,

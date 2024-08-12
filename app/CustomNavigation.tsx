@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
-import { COLORS, FONTS, IMAGES, SIZES } from '../../constants/Theme';
+import { COLORS, FONTS, IMAGES, SIZES } from '../constants/Theme';
 
 interface CustomNavigationProps{
     state: any,

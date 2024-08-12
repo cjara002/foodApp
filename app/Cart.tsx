@@ -4,7 +4,7 @@ import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
 import { GlobalStyleSheet } from '@/constants/StyleSheet';
-import Button from '@/components/Button/Button';
+import Button from './Button';
 import CartListItem from './CartListItem';
 
 const Cart = (props: any) => {

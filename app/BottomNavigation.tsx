@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../../app/Home';
+import Home from './Home';
 import CustomNavigation from './CustomNavigation';
-import Orders from '../Order/Orders';
+import Orders from './Orders';
 // import Orders from './Orders';
 // import Favourites from './Favourites';
 // import Profile from './Profile';

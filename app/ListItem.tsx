@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';;
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
-import { RootStackParamList } from '../Navigation/NavigationTypes';
+import { RootStackParamList } from './NavigationTypes';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 interface ListItemsProps{

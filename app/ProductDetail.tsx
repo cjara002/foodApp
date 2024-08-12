@@ -5,7 +5,7 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { LinearGradient } from 'expo-linear-gradient';
 import { COLORS, FONTS, IMAGES } from '@/constants/Theme';
-import Divider from '../Divider/Divider';
+import Divider from './Divider';
 
 const ProductDetail = (props: any) => {
     
