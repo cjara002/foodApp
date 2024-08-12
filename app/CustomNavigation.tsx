@@ -100,7 +100,7 @@ const CustomNavigation: React.FC<CustomNavigationProps> = ({state,navigation,des
                             a =  0;
                         }else if(route.name == "Orders"){
                             a =  (SIZES.width - 20) / 4;
-                        }else if(route.name == "Favourites"){
+                        }else if(route.name == "Favorites"){
                             a =  (SIZES.width - 20) / 4 + (SIZES.width - 20) / 4;
                         }else if(route.name == "Profile"){
                             a =  (SIZES.width - 20) - (SIZES.width - 20) / 4;
@@ -128,8 +128,8 @@ const CustomNavigation: React.FC<CustomNavigationProps> = ({state,navigation,des
                                     source={
                                         label === "Home" ? IMAGES.home2 :
                                         label === "Orders" ? IMAGES.blog :
-                                        // label === "Favourites" ? IMAGES.heart :
-                                        // label === "Profile" ? IMAGES.profile2 :
+                                        label === "Favorites" ? IMAGES.heart :
+                                        label === "Profile" ? IMAGES.profileIcon :
                                         undefined
                                       }
                                 />

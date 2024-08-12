@@ -26,6 +26,8 @@ const {width,height} = Dimensions.get('screen');
     user1 : require('../assets/images/users/pic1.png'),
     foodDetailImg : require('../assets/images/items/pic7.png'),
     blog : require('../assets/images/icons/blog.png'),
+    heart: require('../assets/images/icons/heart.png'),
+    profileIcon: require('../assets/images/icons/user2.png')
     }
 
     export const COLORS = {

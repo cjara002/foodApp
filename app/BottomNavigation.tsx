@@ -3,9 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home';
 import CustomNavigation from './CustomNavigation';
 import Orders from './Orders';
-// import Orders from './Orders';
-// import Favourites from './Favourites';
-// import Profile from './Profile';
+import Favorites from './Favorite';
+import Profile from './Profile';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,14 +27,14 @@ const BottomNavigation = (props: any) => {
                 name="Orders"
                 component={Orders}
             />
-             {/*<Tab.Screen 
-                name="Favourites"
-                component={Favourites}
-            />
             <Tab.Screen 
+                name="Favorites"
+                component={Favorites}
+            />
+             <Tab.Screen 
                 name="Profile"
                 component={Profile}
-            /> */}
+            />
         </Tab.Navigator>
     );
 };

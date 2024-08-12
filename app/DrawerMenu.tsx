@@ -76,22 +76,6 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({homeNavigate}) => {
                         <FeatherIcon size={16} color={colors.text} name={'chevron-right'}/>
                     </TouchableOpacity>
                     
-                    {/* <TouchableOpacity
-                        onPress={() => navigation.navigate('BottomNavigation',{screen : 'Pages'})}
-                        style={[styles.navLink]}
-                    >
-                        <SvgXml style={{marginRight:10}} xml={pages}/>
-                        <Text style={[styles.navText,{color:colors.text}]}>Applications</Text>
-                        <FeatherIcon size={16} color={colors.text} name={'chevron-right'}/>
-                    </TouchableOpacity> */}
-                    {/* <TouchableOpacity
-                        onPress={() => navigation.navigate('Components')}
-                        style={[styles.navLink]}
-                    >
-                        <SvgXml style={{marginRight:10}} xml={components}/>
-                        <Text style={[styles.navText,{color:colors.text}]}>Components</Text>
-                        <FeatherIcon size={16} color={colors.text} name={'chevron-right'}/>
-                    </TouchableOpacity> */}
                     <TouchableOpacity
                         style={[styles.navLink]}
                     >
