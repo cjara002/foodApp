@@ -116,7 +116,7 @@ const Home = (props: any) => {
                   style={{ marginRight: 12 }}
                   size={22}
                   color={COLORS.white}
-                  name={"map-pin"}
+                  name={"coffee"}
                 />
                 <View style={{ flex: 1 }}>
                   <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -128,7 +128,7 @@ const Home = (props: any) => {
                         color: COLORS.white,
                       }}
                     >
-                      Work
+                      Welcome, User!
                     </Text>
                     <Feather
                       style={{ marginLeft: 2 }}
@@ -145,7 +145,7 @@ const Home = (props: any) => {
                       opacity: 0.75,
                     }}
                   >
-                    Rkpuram sector-b near chawla circle...
+                    Create a new dish below
                   </Text>
                 </View>
                 <TouchableOpacity
@@ -154,7 +154,7 @@ const Home = (props: any) => {
                 >
                   <Feather
                     style={{ marginLeft: -1 }}
-                    size={22}
+                    size={45}
                     color={COLORS.white}
                     name="grid"
                   />
@@ -169,6 +169,8 @@ const Home = (props: any) => {
                     shadowOffset: { width: 0, height: 4 },
                     shadowOpacity: 0.15,
                     shadowRadius: 5,
+                    flexDirection: "row",  // Make the input and icon sit next to each other
+                    alignItems: "center", 
                   },
                   Platform.OS === "ios" && {
                     backgroundColor: colors.card,
@@ -181,11 +183,15 @@ const Home = (props: any) => {
                     ...GlobalStyleSheet.searchInput,
                     backgroundColor: "white",
                     color: COLORS.title,
+                    flex: 1,  // Take up the remaining space after the icon
+                    paddingRight: 40,
                   }}
-                  placeholder="Search for restaurants, items, and more"
+                  placeholder="Search for recipes"
                   placeholderTextColor={COLORS.textLight}
                 />
-                <TouchableOpacity style={GlobalStyleSheet.searchInputIcon}>
+                {/* TODOCARLOS: Set up the search here */}
+                {/* TODOCARLOS: Can make the search bar its own component */}
+                <TouchableOpacity style={{ position: "absolute", right: 10, bottom: -15 }}>
                   <Feather color={colors.text} size={22} name="search" />
                 </TouchableOpacity>
               </View>

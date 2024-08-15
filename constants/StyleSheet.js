@@ -40,7 +40,7 @@ export const GlobalStyleSheet = {
     },
     searchInputIcon : {
         position:'absolute',
-        right:5,
+        right:10,
         height:45,
         width:45,
         alignItems:'center',
